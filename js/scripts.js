@@ -4,6 +4,7 @@ $(function() {
 
     $(".user").text(userInput);
 
+    $(".panel").show();
     $("#letter").show();
 
     event.preventDefault();
