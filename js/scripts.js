@@ -9,4 +9,12 @@ $(function() {
 
     event.preventDefault();
   });
+
+  $("#sayForm form").submit(function(event) {
+    var userInput = $("input#userSays").val();
+
+    $("form").after(userInput.toUpperCase());
+
+    event.preventDefault();
+  });
 });
